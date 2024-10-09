@@ -98,7 +98,8 @@
                         <button class="btn btn-secondary">Reset</button>
                     </div>
                     <div class="col-6 text-center">
-                        <button class="btn btn-success" (click)="onSaveClient()">Save Client</button>
+                        <!-- <button class="btn btn-success" (click)="onSaveClient()">Save Client</button> -->
+                         <app-mybutton (onBtnClicked)="onSaveClient()" [btnTitle]="'Save Client'" [btnClass]="'btn btn-success'"></app-mybutton>
                     </div>
                 </div>
             </div>

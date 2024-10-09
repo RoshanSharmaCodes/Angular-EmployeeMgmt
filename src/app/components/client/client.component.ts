@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { ClientService } from '../../service/client.service';
 import { IApiResponse } from '../../modals/interface/role';
 import { UpperCasePipe } from '@angular/common';
+import { MybuttonComponent } from '../../reusableComponent/mybutton/mybutton.component';
 
 @Component({
   selector: 'app-client',
   standalone: true,
-  imports: [FormsModule, UpperCasePipe],
+  imports: [FormsModule, UpperCasePipe, MybuttonComponent],
   templateUrl: './client.component.html',
   styleUrl: './client.component.css'
 })
